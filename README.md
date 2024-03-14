@@ -94,8 +94,9 @@
 
 > ### Descrição Detalhada da Construção do Código ...
 
-> npm create vite@latest
-> React
-> Typescript
-> npm install
-> npm run dev
+> * Criei o projeto: ` npm create vite@latest`
+> * Instalei as dependências: `npm install`
+> * Iniciei o servidor de desenvolvimento: `npm run dev`
+> * Instalei o Storybook: `npx storybook@latest init`
+> * Instalei o Styled Componentes: `npm install styled-components` 
+
