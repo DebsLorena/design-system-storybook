@@ -95,8 +95,9 @@
 > ### Descrição Detalhada da Construção do Código ...
 
 > * Criei o projeto: ` npm create vite@latest`
-> * Instalei as dependências: `npm install`
+> * Instalei dependências: `npm install`
 > * Iniciei o servidor de desenvolvimento: `npm run dev`
-> * Instalei o Storybook: `npx storybook@latest init`
-> * Instalei o Styled Componentes: `npm install styled-components` 
+> * Instalei Storybook: `npx storybook@latest init`
+> * Instalei Styled Componentes: `npm install styled-components` 
+> * Instalei Prettier `npm install --save-dev --save-exact prettier`
 
