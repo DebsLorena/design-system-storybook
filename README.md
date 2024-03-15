@@ -101,5 +101,6 @@
 > * Instalei Styled Componentes: `npm install styled-components` 
 > * Instalei Prettier `npm install --save-dev --save-exact prettier`
 > * Criar pasta e inserir configurações do Prettier
+>
 
 
