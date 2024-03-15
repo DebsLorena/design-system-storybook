@@ -1,4 +1,4 @@
-import './variables.css';
+import './Variables.css';
 
 export const Colors = {
   primary: 'var(--electricViolet-700)',

@@ -1,0 +1,97 @@
+import { Meta, ColorPalette, ColorItem } from '@storybook/blocks';
+import { Colors } from '../styles/Colors';
+
+
+
+<Meta title="Design System|Colors" />
+
+
+ <ColorPalette>
+  {Object.entries(Colors).map(([key, value]) => (
+    <ColorItem title="Colors" subtitle={key} colors={[value]} />
+  ))}
+</ColorPalette> 
+
+{/* 
+<ColorPalette>
+ <ColorItem
+    title="Colors"
+    subtitle=""
+    colors={{
+      primary: [Colors.primary],
+      secondary: [Colors.secondary],
+      success: [Colors.success],
+      error: [Colors.error],
+      warning: [Colors.warning],
+      info: [Colors.info],
+      light: [Colors.light],
+      dark: [Colors.dark],
+    }}
+  />
+
+   <ColorItem
+    title="Icons"
+    subtitle=""
+    colors={{
+      ctaButton: [Colors.ctaButton],
+      ctaButtonDisabled: [Colors.ctaButtonDisabled],
+      buttonDisabled: [Colors.buttonDisabled],
+    }}
+  />
+
+    <ColorItem
+    title="Icons"
+    subtitle=""
+    colors={{
+      ctaButton: [Colors.ctaButton],
+      ctaButtonDisabled: [Colors.ctaButtonDisabled],
+      buttonDisabled: [Colors.buttonDisabled],
+    }}
+  />
+
+   <ColorItem
+    title="Text"
+    subtitle=""
+    colors={{
+      placheholder: [Colors.placheholder],
+      body: [Colors.body],
+      inputError: [Colors.inputError],
+      inputSucess: [Colors.inputSucess],
+      ctaButtonDefault: [Colors.ctaButtonDefault],
+      ghostButtonDefault: [Colors.ghostButtonDefault],
+      textButtonDefault: [Colors. textButtonDefault],
+      textButtonHover: [Colors.textButtonHover],
+      ctaButtonDisabled: [Colors.ctaButtonDisabled],
+      disabled: [Colors.disabled],
+    }}
+  />
+
+  <ColorItem
+    title="Stroke"
+    subtitle=""
+    colors={{
+      focused: [Colors.focused],
+      default: [Colors.default],
+      disabled: [Colors.disabled],
+    }}
+  />
+
+   <ColorItem
+    title="Bg"
+    subtitle=""
+    colors={{
+      bgWhite: [Colors.bgWhite],
+      buttonSecondaryDisabled: [Colors.buttonSecondaryDisabled],
+    }}
+/>
+     <ColorItem
+    title="Gradient"
+    subtitle=""
+    colors={{
+      gradientPrimary: [Colors.gradientPrimary],
+      gradientDisabled: [Colors.gradientDisabled],
+    }}
+  />
+
+ 
+</ColorPalette> */}

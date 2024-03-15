@@ -1,0 +1,43 @@
+import { Meta, ColorPalette, ColorItem } from '@storybook/blocks';
+import { Tokens } from '../styles/Tokens';
+
+<Meta title="Design System|Tokens" />
+
+# Design System Tokens
+
+## Border Radius
+
+<ColorPalette>
+  {Object.entries(Tokens.borderRadius).map(([key, value]) => (
+    <ColorItem title="Border Radius" subtitle={key} colors={[value]} />
+  ))}
+</ColorPalette>
+
+## Spacing
+
+<ColorPalette>
+  {Object.entries(Tokens.spacing).map(([key, value]) => (
+    <ColorItem title="Spacing" subtitle={key} colors={[value]} />
+  ))}
+</ColorPalette>
+
+## Breakpoints
+
+<ColorPalette>
+  {Object.entries(Tokens.breakpoints).map(([key, value]) => (
+    <ColorItem title="Breakpoints" subtitle={key} colors={[value]} />
+  ))}
+</ColorPalette>
+
+## Border
+
+<ColorPalette>
+  {Object.entries(Tokens.border).map(([key, value]) => (
+    <ColorItem title="Border" subtitle={key} colors={[value]} />
+  ))}
+</ColorPalette>
+
+
+
+
+
