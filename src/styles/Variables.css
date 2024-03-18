@@ -108,18 +108,18 @@
 
 
   /* spacing */
-  --padding0: 0px;
-  --padding2: 2px;
-  --padding4: 4px;
-  --padding8: 8px;
-  --padding16: 16px;
-  --padding24: 24px;
-  --padding32: 32px;
-  --padding40: 40px;
-  --padding48: 48px;
-  --padding56: 56px;
-  --padding64: 64px;
-  --paddingFul: 120px;
+  --spacing0: 0px;
+  --spacing2: 2px;
+  --spacing4: 4px;
+  --spacing8: 8px;
+  --spacing16: 16px;
+  --spacing24: 24px;
+  --spacing32: 32px;
+  --spacing40: 40px;
+  --spacing48: 48px;
+  --spacing56: 56px;
+  --spacing64: 64px;
+  --spacingFull: 120px;
 
 
 

@@ -14,18 +14,18 @@ export const Tokens = {
     bRadiusFull: 'var(--bRadiusFul)'
   },
   spacing: {
-    padding0: 'var(--padding0)',
-    padding2: 'var(--padding2)',
-    padding4: 'var(--padding4)',
-    padding8: 'var(--padding8)',
-    padding16: 'var(--padding16)',
-    padding24: 'var(--padding24)',
-    padding32: 'var(--padding32)',
-    padding40: 'var(--padding40)',
-    padding48: 'var(--padding48)',
-    padding56: 'var(--padding56)',
-    padding64: 'var(--padding64)',
-    paddingFull: 'var(--paddingFul)'
+    spacing0: 'var(--spacing0)',
+    spacing2: 'var(--spacing2)',
+    spacing4: 'var(--spacing4)',
+    spacing8: 'var(--spacing8)',
+    spacing16: 'var(--spacing16)',
+    spacing24: 'var(--spacing24)',
+    spacing32: 'var(--spacing32)',
+    spacing40: 'var(--spacing40)',
+    spacing48: 'var(--spacing48)',
+    spacing56: 'var(--spacing56)',
+    spacing64: 'var(--spacing64)',
+    spacingFull: 'var(--spacingFul)'
   },
   breakpoints: {
     xs: 'var(--xs)',

@@ -31,7 +31,7 @@ export const Colors = {
   bgWhite: 'var(--neutral-white)',
   buttonSecondaryDisabled: 'var(--neutral-50)',
 
-  gradientPrimary: 'var(linear-gradient(180deg, #7C05F2 0%, #6C05D2 100%))',
-  gradientDisabled: 'var(linear-gradient(180deg, #EDEDED 0%, #DCDCDC 100%))',
+  gradientPrimary: 'linear-gradient(180deg, #7C05F2 0%, #6C05D2 100%)',
+  gradientDisabled: 'linear-gradient(180deg, #EDEDED 0%, #DCDCDC 100%)',
 };
 
