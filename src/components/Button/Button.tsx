@@ -1,48 +1,36 @@
 import React from 'react';
-import './button.css';
+import { StyledButton } from './StyledButton';
+import { DefaultIconButton } from '../../assets/defaultIconButton';
+
 
 interface ButtonProps {
-  /**
-   * Is this the principal call to action on the page?
-   */
-  primary?: boolean;
-  /**
-   * What background color to use
-   */
-  backgroundColor?: string;
-  /**
-   * How large should the button be?
-   */
-  size?: 'small' | 'medium' | 'large';
-  /**
-   * Button contents
-   */
+  variant?: 'primary' | 'secondary';
+  // backgroundColor?: string;
+  // size?: 'small' | 'medium' | 'large';
   label: string;
-  /**
-   * Optional click handler
-   */
+  disabled?: boolean;
   onClick?: () => void;
+  icon?: React.ReactNode;
 }
 
-/**
- * Primary UI component for user interaction
- */
 export const Button = ({
-  primary = false,
-  size = 'medium',
-  backgroundColor,
+  variant = 'primary',
+  // size = 'medium',
   label,
+  disabled = false,
+  icon = <DefaultIconButton />,
   ...props
 }: ButtonProps) => {
-  const mode = primary ? 'storybook-button--primary' : 'storybook-button--secondary';
   return (
-    <button
+    <StyledButton
       type="button"
-      className={['storybook-button', `storybook-button--${size}`, mode].join(' ')}
-      style={{ backgroundColor }}
+      variant={variant}
+      disabled={disabled}
+      // size={size}
       {...props}
     >
-      {label}
-    </button>
+      <span className="icon">{icon}</span>
+      <div>{label}</div>
+    </StyledButton>
   );
 };
