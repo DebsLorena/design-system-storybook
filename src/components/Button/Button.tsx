@@ -1,12 +1,12 @@
 import React from 'react';
 import { StyledButton } from './StyledButton';
 import { DefaultIconButton } from '../../assets/defaultIconButton';
+import { Loading } from '../Loading/Loading';
 
 
 interface ButtonProps {
   variant?: 'primary' | 'secondary';
-  // backgroundColor?: string;
-  // size?: 'small' | 'medium' | 'large';
+  isLoading?: boolean;
   label: string;
   disabled?: boolean;
   onClick?: () => void;
@@ -15,9 +15,9 @@ interface ButtonProps {
 
 export const Button = ({
   variant = 'primary',
-  // size = 'medium',
   label,
   disabled = false,
+  isLoading = false,
   icon = <DefaultIconButton />,
   ...props
 }: ButtonProps) => {
@@ -25,12 +25,12 @@ export const Button = ({
     <StyledButton
       type="button"
       variant={variant}
-      disabled={disabled}
-      // size={size}
+      disabled={disabled || isLoading}
       {...props}
     >
       <span className="icon">{icon}</span>
       <div>{label}</div>
+      {isLoading ? (<Loading isLoading={true} />) : null}
     </StyledButton>
   );
 };
